@@ -2,6 +2,7 @@ m=int(input("Enter the no of rows:"))
 n=int(input("Enter the no of cols:"))               
 print(f"Enter {m*n} elements:")
 iplist=list(map(int,input().split()))
+
 mat=[]
 for k in range(m):
     start=k*n
