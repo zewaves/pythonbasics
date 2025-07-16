@@ -24,9 +24,18 @@ class LinkedList:
             print(current.data, sep= "", end=" ")
             current = current.next
         print(current.data)
+    def insert_front(self, data):
+        newnode = Node(data)
+        if self.head == None:
+            self.head = newnode
+            return
+        previousfront = self.head
+        self.head = newnode
+        newnode.next = previousfront
 
 L1 = LinkedList()
 L1.insert_end(10)
 L1.insert_end(20)
 L1.insert_end(30)
+L1.insert_front(00)
 L1.display()
