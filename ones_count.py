@@ -1,5 +1,5 @@
 m=int(input("Enter the no of rows:"))
-n=int(input("Enter the no of cols:"))               
+n=int(input("Enter the no of cols:"))
 print(f"Enter {m*n} elements:")
 iplist=list(map(int,input().split()))
 
